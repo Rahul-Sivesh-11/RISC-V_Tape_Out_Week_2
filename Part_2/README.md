@@ -83,3 +83,57 @@ iverilog -o ../../output/babysoc_sim.out -I ../include *.v testbench.v
 gtkwave ../../output/babysoc_sim.vcd
 ```
 ![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_2/blob/main/Images/Screenshot%202025-10-04%20223049.png)
+## 🧩 Submodule Functional Simulation
+
+Before running the full **SoC simulation** (`vsdbabysoc.v`), each **individual submodule** is functionally tested to verify that it performs as expected.  
+This modular verification approach helps isolate design issues early and ensures that all blocks operate correctly before system-level integration.
+
+---
+
+### 1. DAC Module (`avsddac.v`)
+
+The **Digital-to-Analog Converter (DAC)** translates the **digital output data** from the **RVMYTH CPU core** into a corresponding **analog voltage signal**.  
+This module validates the interface between the digital domain (processed by the CPU) and the analog world, ensuring accurate data conversion for real-world output applications.
+#### **Commands Used**
+
+```bash
+# Create output directory
+mkdir -p ~/Desktop/VSDBabySoC/output/avsddac
+
+# Compile the DAC module testbench
+iverilog -o ~/Desktop/VSDBabySoC/output/avsddac/avsddac.out \
+  -DPRE_SYNTH_SIM \
+  -I ~/Desktop/VSDBabySoC/src/include \
+  -I ~/Desktop/VSDBabySoC/src/module \
+  ~/Desktop/VSDBabySoC/src/module/tb_avsddac.v
+
+# Run the simulation
+vvp ~/Desktop/VSDBabySoC/output/avsddac/avsddac.out
+
+# View the waveform
+gtkwave avsddac.vcd
+```
+![pic](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_2/blob/main/Images/Screenshot%202025-10-04%20233610.png)
+![pic](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_2/blob/main/Images/Screenshot%202025-10-04%20233626.png)
+#### Observation
+The **DAC module** accurately converts the provided **digital input values** into a corresponding **analog-equivalent output waveform**.  
+Both **reset** and **clock synchronization** functionalities have been successfully verified during simulation, confirming stable and predictable DAC behavior.
+### 2. **PLL Module (`avsdpll.v`)**
+
+The PLL (Phase-Locked Loop) generates a stable, higher-frequency clock for SoC synchronization.
+
+#### **Commands Used**
+
+```bash
+mkdir -p ~/Desktop/VSDBabySoC/output/avsdpll
+
+iverilog -o ~/Desktop/VSDBabySoC/output/avsdpll/avsdpll.out \
+  -DPRE_SYNTH_SIM \
+  -I ~/Desktop/VSDBabySoC/src/include \
+  -I ~/Desktop/VSDBabySoC/src/module \
+  ~/Desktop/VSDBabySoC/src/module/tb_avsdpll.v
+
+vvp ~/Desktop/VSDBabySoC/output/avsdpll/avsdpll.out
+gtkwave avsdpll.vcd
+```
+
