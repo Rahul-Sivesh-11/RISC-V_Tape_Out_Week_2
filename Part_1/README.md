@@ -18,7 +18,8 @@ Unlike traditional systems that rely on multiple discrete components on printed 
 - **High Integration:** Combines multiple subsystems to minimize area, power, and cost.  
 - **Domain-Specific Optimization:** Designed for particular applications like smartphones, IoT, or automotive electronics.  
 - **Complex Design Process:** Involves multi-clock systems, power management, and timing coordination.  
-- **Cross-Disciplinary:** Requires knowledge across digital, analog, and software design domains.  
+- **Cross-Disciplinary:** Requires knowledge across digital, analog, and software design domains.
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_2/blob/main/Images/Screenshot%202025-10-04%20231328.png)
 
 ---
 
