@@ -1,4 +1,4 @@
-# 🧠 BabySoC Functional Modelling
+# BabySoC Functional Modelling
 
 ## 1. Understanding a System-on-Chip (SoC)
 
@@ -118,5 +118,26 @@ BabySoC is easily simulated using **Icarus Verilog** and **GTKWave**, allowing l
 
 **Common Tools and Languages:**
 - Verilog, SystemVerilog, or VHDL for behavioral modeling.  
-- Testbenches fo
+- Testbenches for simulation-driven verification.  
 
+### Transitioning from Functional to Physical Design
+
+1. **Functional Model:** High-level behavior only.  
+2. **RTL Model:** Adds clock cycles, registers, and timing logic.  
+3. **Gate-Level Design:** Synthesized using tools like **Yosys** for FPGA or ASIC implementation.  
+4. **Physical Design:** Involves layout, routing, timing closure, and fabrication.  
+
+### Why It’s Important
+
+- Reduces design risks by identifying issues early.  
+- Saves development time and cost by preventing post-silicon bugs.  
+- Ensures a smoother path from concept to fabrication.  
+
+---
+
+## 🧾 Summary
+
+- **SoC** integrates compute, memory, and communication blocks on a single chip for compact efficiency.  
+- **BabySoC** simplifies these ideas, providing a clear educational model.  
+- **Functional Modelling** helps verify and refine system behavior before RTL and physical implementation.  
+- This approach builds a strong foundation for advanced VLSI and SoC design understanding.  
