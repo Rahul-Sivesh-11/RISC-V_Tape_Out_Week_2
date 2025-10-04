@@ -135,7 +135,7 @@ BabySoC is easily simulated using **Icarus Verilog** and **GTKWave**, allowing l
 
 ---
 
-## 🧾 Summary
+## Summary
 
 - **SoC** integrates compute, memory, and communication blocks on a single chip for compact efficiency.  
 - **BabySoC** simplifies these ideas, providing a clear educational model.  
