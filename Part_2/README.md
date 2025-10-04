@@ -82,3 +82,4 @@ iverilog -o ../../output/babysoc_sim.out -I ../include *.v testbench.v
 ```bash
 gtkwave ../../output/babysoc_sim.vcd
 ```
+![img](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_2/blob/main/Images/Screenshot%202025-10-04%20223049.png)
