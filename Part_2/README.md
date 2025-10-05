@@ -172,6 +172,7 @@ vvp avsddac.vvp
 gtkwave avsddac_tb_test.vcd
 ```
 ![pic](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_2/blob/main/Images/Screenshot%202025-10-05%20105351.png)
+
 `avsdpll.v`
 
 View the design file
