@@ -9,7 +9,9 @@ This report explains the core concepts of System-on-Chip (SoC) design and provid
 - Build foundational skills for **pre-tapeout processes**, including synthesis verification, timing analysis, and netlist creation.
 ## Part-wise Folders  
 [Part_1](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_2/tree/main/Part_1)
+
 [Part_2](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_2/tree/main/Part_2)
+
 We extend our heartfelt appreciation to **Mr. [Kunal Ghosh](https://in.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836)**  and the **VSD team** for their guidance and for providing invaluable learning resources. Our sincere thanks also go to the SKY130 PDK community, the contributors of VSDBabySoC, and the developers of open-source tools like Yosys, Icarus Verilog, and GTKWave for making this learning experience possible.
 ---
 
