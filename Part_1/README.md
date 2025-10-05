@@ -106,6 +106,8 @@ BabySoC is easily simulated using **Icarus Verilog** and **GTKWave**, allowing l
 
 ---
 
+![pic](https://github.com/Rahul-Sivesh-11/RISC-V_Tape_Out_Week_2/blob/main/Images/Screenshot%202025-10-04%20231411.png)
+
 ## 4. Role of Functional Modelling Before RTL and Physical Design
 
 **Functional Modelling** focuses on describing what a system does — not how it’s implemented at the gate or transistor level.
